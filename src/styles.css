@@ -1,1 +1,67 @@
-/* You can add global styles to this file, and also import other style files */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  background-image: url("C:\Users\luisc\BOOTCAMP\ANGULAR\angular-todo-app\src\assets\images\listatareas.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+h2 {
+  color: #555;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.todo-item input {
+  margin-right: 10px;
+}
+
+.todo-item span {
+  flex-grow: 1;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.new-todo-container {
+  margin-top: 20px;
+}
+
+.new-todo-container input {
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.new-todo-container button {
+  padding: 8px 15px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+

@@ -1,0 +1,13 @@
+<h2>Lista de Tareas</h2>
+    <div *ngFor="let task of tasks; let i = index">
+      <app-todo-item
+        [task]="task"
+        (remove)="removeTask(i)"
+        (complete)="completeTask(i)"
+      >
+    </app-todo-item>
+    </div>
+    <div>
+      <input [(ngModel)]="newTask" placeholder="¿Tarea Pendiente?" />
+      <button (click)="addTask()">Añadir Tarea</button>
+    </div>
